@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+<canvas id="c" width="500" height="500"></canvas>
+<script >
+	var c = document.querySelector("#c");//grabbing the canvas using this selector
+
+	var ctx= c.getContext("2d");
+
+	ctx.fillStyle = "white";
+    ctx.strokeStyle = "Black";
+    ctx.font = "bold 36pt impact";
+    ctx.lineWidth = 3;
+
+    ctx.fillText("Hello Hello!", c.width/ 2, 40);
+    // x position starting at half of the width of canvas and y position at 40
+    ctx.strokeText("Hello Hello!", c.width/ 2, 40);
+
+	</script>
+</body>
+</html>
