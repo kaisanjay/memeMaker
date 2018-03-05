@@ -31,20 +31,49 @@
     ctx.stroke();
 
 
+    ctx.strokeStyle = "#33CC33"
 
     ctx.moveTo(50,50);
     ctx.lineTo(150,50);
     ctx.lineTo(150,150);
     ctx.lineTo(50,150);
-    ctx.lineTo(50,50);
+    ctx.lineTo(50,50);// or ctx.strokeRect(50,50,100,100)
     ctx.stroke();
+
 
     ctx.beginPath();
     ctx.moveTo(75,75);
     ctx.lineTo(125,75);
     ctx.lineTo(125,125);
-   
+
     ctx.fill();
+
+
+    ctx.strokeText("HELLO UDACITY",50,10);
+
+/* Scaling
+scale(x,y) multiplies the x and y values by a given factor so
+
+ctx.scale(2,3);
+
+will make all values twice as large on the x axis and three times as large on the y axis.
+
+Translation
+translate(x,y) moves all subsequent draw commands by x number of pixels on horizontally and y pixels vertically.
+
+ctx.translate(20,40); moves all elements drawn after it 20 pixels to the rights and 40 pixels down.
+
+Rotation
+ctx.rotate(angleRadians) rotates an object a certain number of radians (generally) about its center. You may have learned about radians in school but here's a handy formula to convert a value from degrees to radians.
+
+radians = degrees * (Math.PI/180)
+
+Don't ask us why everything in Computer Graphics uses radians. We have no idea. :)
+
+Order of operations
+You should generally scale objects first, rotate them next, and then finally translate last. 
+
+*/
 
 
 
@@ -55,3 +84,4 @@
 
 </body>
 </html>
+
