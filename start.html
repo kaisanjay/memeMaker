@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html>
+
 <head>
 </head>
 
@@ -6,8 +8,18 @@
 <canvas id="c" width="200" height="200"></canvas>
 <script >
 	var c = document.querySelector("#c");//grabbing the canvas using this selector
-	
+
 	var ctx= c.getContext("2d");
+
+	var image = new image();
+
+	image.onload = function() {
+		console.log("Loaded image");
+		ctx.drawImage(image, 0, 0, c.width,c.height);
+	}
+
+	image.src = "fry_fixed.jpg";
+
 </script>
 
 </body>
